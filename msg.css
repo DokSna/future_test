@@ -1,0 +1,11 @@
+.messages {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+.ustime {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 250px;
+}

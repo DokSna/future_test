@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,6 +9,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="msg.css">
+
   <title>Тестовое задание на позицию php разработчика</title>
 </head>
 
@@ -24,6 +30,11 @@
         <img src="./image/logo.png" alt="логотип">
       </div>
     </header>
+    <div class="comments">
+      <?php
+        include('./comments.php');
+      ?>
+    </div>
     <hr>
     <main>
       <!-- комментарии из бд -->
@@ -38,7 +49,17 @@
         <div class="buttom_wrap">
           <input class="buttom" type="submit" value="Отправить">
         </div>
+        <div class="msg">
+          <?php
+          if ($_SESSION['message']) {
+            echo '<p class="msg"> ' . $_SESSION['message'] . ' </p>';
+          }
+          unset($_SESSION['message']);
+          ?>
+        </div>
       </form>
+
+
     </main>
     <footer>
 
