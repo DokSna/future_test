@@ -24,9 +24,21 @@
         <img src="./image/logo.png" alt="логотип">
       </div>
     </header>
+    <hr>
     <main>
-      
+      <!-- комментарии из бд -->
 
+      <!-- форма отправки комментариев -->
+      <form action="add_comment.php" method="post">
+        <h2>Оставить комментарий</h2>
+        <label for="user_name">Ваше имя</label>
+        <input type="text" name="user_name" id="user_name">
+        <label for="user_text">Ваш комментарий</label>
+        <textarea name="user_text" id="user_text" cols="30" rows="10"></textarea>
+        <div class="buttom_wrap">
+          <input type="submit" value="Отправить">
+        </div>
+      </form>
     </main>
     <footer>
 
