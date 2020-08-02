@@ -52,7 +52,6 @@ body {
 .wrap {
   margin: auto;
   padding: 0px;
-  padding-top: 21px;
   max-width: 960px;
 }
 
@@ -79,8 +78,9 @@ header {
   justify-content: space-between;
   height: 176px;
   width: 954px;
-  height: 302px;
+  height: 220px;
   margin: 0 auto;
+  padding-top: 21px;
 }
 
 .contacts {
@@ -173,6 +173,7 @@ form {
   display: flex;
   flex-direction: column;
   width: 462px;
+  margin-left: 8px;
 }
 .buttom_wrap {
   display: flex;

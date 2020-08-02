@@ -10,6 +10,7 @@ session_start();
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="msg.css">
+  <link rel="stylesheet" href="footer.css">
 
   <title>Тестовое задание на позицию php разработчика</title>
 </head>
@@ -19,7 +20,7 @@ session_start();
     <header>
       <div class="left_wrapper">
         <div class="contacts">
-          <a class="contacts_phone" href="tel:+7 (961) 230 73 49">Телефон: (499) 340-94-71</a>
+          <a class="contacts_phone" href="tel:+7 (499) 340 94 71">Телефон: (499) 340-94-71</a>
           <span class="contacts_mail">Email: <a href="mailto:info@future-group.ru">info@future-group.ru</a></span>
         </div>
         <div class="title_wrapper">
@@ -32,7 +33,7 @@ session_start();
     </header>
     <div class="comments">
       <?php
-        include('./comments.php');
+      include('./comments.php');
       ?>
     </div>
     <hr>
@@ -61,10 +62,22 @@ session_start();
 
 
     </main>
-    <footer>
-
-    </footer>
   </div>
+  <footer>
+    <div class="wrap_footer">
+      <div class="logo">
+        <img src="./image/logo_f.png" alt="Логотип">
+      </div>
+      <div class="about_wrap">
+        <div class="contacts">
+          <span><a class="contacts_f" href="tel:+7 (499) 340 94 71">Телефон: (499) 340-94-71</a></span>
+          <span class="contacts_f">Email: <a href="mailto:info@future-group.ru">info@future-group.ru</a></span>
+          <span class="contacts_f">Адрес: <a href="#">115088 Москва, ул. 2-я Машиностроения, д. 7 стр. 1</a></span>
+        </div>
+        <div class="copyright_true">© 2010 - 2014 Future. Все права защищены</div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
