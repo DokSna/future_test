@@ -2,8 +2,8 @@
 Тестовое задание на позицию php разработчика.
 
 ## Инструкция запуска
-1. Через phpMyAdmin импортируете бд.sql
-2. Открываете index.php через web-serfer (я использовал Open Server)
+1. Через phpMyAdmin импортируете valikov_future.sql
+2. Открываете index.php через web-server (я использовал Open Server)
 3. Подключение к бд в файле connect.php 
 ```php
 $host     = "localhost";
